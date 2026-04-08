@@ -10,7 +10,7 @@ export default function Header() {
 
         <div className="flex justify-center items-center gap-2">
           <Image 
-            src="/logo.png"
+            src="/LOGO.png"
             alt="Logo da empresa"
             width={40}
             height={40}
