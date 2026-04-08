@@ -26,8 +26,10 @@ export default function Header() {
         </div>
 
         <div className="bg-botao text-branco font-medium rounded-lg flex justify-center items-center py-2.5 px-5 gap-2">
-          <PhoneCall />
-          <a href="https://wa.me/5569992815365" target="_blank" className="hidden sm:block"> CONTATO</a>
+          
+          <a href="https://wa.me/5569992815365" target="_blank"> <PhoneCall /> </a>
+
+          <a href="https://wa.me/5569992815365" target="_blank" className="hidden sm:block">  CONTATO</a>
         </div>
 
       </div>
