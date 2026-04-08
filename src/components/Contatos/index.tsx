@@ -13,12 +13,12 @@ export default function Contatos() {
       <p className="text-textos text-center max-w-2xl"> Me chama no WhatsApp pra gente conversar. Se a peça que você gostou já foi vendida, podemos encomendar uma parecida! </p>
 
       <div className="flex flex-col gap-4">
-        <div className="flex justify-center items-center bg-[#26A65B] rounded-xl py-4 px-15 gap-3 font-bold text-lg">
+        <div className="flex justify-center items-center bg-[#26A65B] rounded-xl py-4 px-2 gap-3 font-bold text-lg">
           <Phone color="white"/>
           <a href="https://wa.me/5569992815365" target="_blank" className="text-branco"> Me chama no WhatsApp </a>
         </div>
 
-        <div className="flex justify-center items-center bg-branco rounded-xl py-4 px-15 gap-3 font-bold text-lg border border-gray-200">
+        <div className="flex justify-center items-center bg-branco rounded-xl py-4 px-2 gap-3 font-bold text-lg border border-gray-200">
           <Camera />
           <a href="https://www.instagram.com/mycustomknife/" target="_blank"> Me chama no Instagram </a>
         </div>
