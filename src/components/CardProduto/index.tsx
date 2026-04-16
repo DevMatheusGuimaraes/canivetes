@@ -45,7 +45,7 @@ export default function CardProduto({ nome, descricao, preco, url_foto, identica
         </p> */}
 
         <h2 className="mb-1 text-[20px] font-bold leading-tight text-zinc-900">
-          Canivete: {identicador}
+          {nome}: {identicador}
         </h2>
 
         <p className="mb-6 text-[15px] leading-7 text-zinc-600">
