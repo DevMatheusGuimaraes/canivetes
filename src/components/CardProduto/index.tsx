@@ -15,11 +15,15 @@ export default function CardProduto({ nome, descricao, preco, url_foto, identica
 
   const linkWhatsapp = `https://wa.me/5569992815365?text=${encodeURIComponent(mensagem)}`;
 
- const formatCurrency = (value: string): string => {
-    const numeric = value.replace(/\D/g, '');
-    if (!numeric) return '';
-    const amount = (parseInt(numeric) / 100).toFixed(2);
-    return `R$ ${amount.replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
+  const formatCurrency = (value: string): string => {
+    if (!value) return '';
+
+    const numberValue = Number(value);
+
+    return `R$ ${numberValue
+      .toFixed(2)
+      .replace('.', ',')
+      .replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
   };
 
   return (
@@ -41,7 +45,7 @@ export default function CardProduto({ nome, descricao, preco, url_foto, identica
         </p> */}
 
         <h2 className="mb-1 text-[20px] font-bold leading-tight text-zinc-900">
-          Canivete ID: {identicador}
+          Canivete: {identicador}
         </h2>
 
         <p className="mb-6 text-[15px] leading-7 text-zinc-600">
