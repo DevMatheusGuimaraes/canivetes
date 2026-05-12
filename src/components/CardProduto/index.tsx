@@ -13,7 +13,7 @@ export default function CardProduto({ nome, descricao, preco, url_foto, identica
 
   const mensagem = `Olá, estou interessado no produto ${identicador} e gostaria de mais informações. Se possível, poderia me passar mais detalhes sobre ele?`;
 
-  const linkWhatsapp = `https://wa.me/5569992815365?text=${encodeURIComponent(mensagem)}`;
+  const linkWhatsapp = `https://wa.me/5569992220724?text=${encodeURIComponent(mensagem)}`;
 
   const formatCurrency = (value: string): string => {
     if (!value) return '';

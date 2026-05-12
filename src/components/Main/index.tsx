@@ -16,7 +16,7 @@ export default function SessaoInicial() {
           <a href="#produtos" className=" text-branco cursor-pointer"> Ver Coleção </a>
         </div>
         <div className="bg-branco h-14 w-44 text-texto-botao font-bold rounded-lg border border-gray-200 cursor-pointer flex items-center justify-center">
-          <a href="https://wa.me/5569992815365" target="_blank" className="cursor-pointer"> Fala Comigo </a>
+          <a href="https://wa.me/5569992220724" target="_blank" className="cursor-pointer"> Fala Comigo </a>
         </div>
       </div>
     </main>

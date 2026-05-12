@@ -15,7 +15,7 @@ export default function Contatos() {
       <div className="flex flex-col gap-4">
         <div className="flex justify-center items-center bg-[#26A65B] rounded-xl py-4 px-2 gap-3 font-bold text-lg">
           <Phone color="white"/>
-          <a href="https://wa.me/5569992815365" target="_blank" className="text-branco"> Me chama no WhatsApp </a>
+          <a href="https://wa.me/5569992220724" target="_blank" className="text-branco"> Me chama no WhatsApp </a>
         </div>
 
         <div className="flex justify-center items-center bg-branco rounded-xl py-4 px-2 gap-3 font-bold text-lg border border-gray-200">
