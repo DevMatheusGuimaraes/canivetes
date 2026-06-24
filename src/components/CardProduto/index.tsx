@@ -7,9 +7,10 @@ interface Canivete {
   preco: number;
   url_foto: string;
   identicador: string;
+  quantidade: string;
 }
 
-export default function CardProduto({ nome, descricao, preco, url_foto, identicador }: Canivete) {
+export default function CardProduto({ nome, descricao, preco, url_foto, identicador, quantidade }: Canivete) {
 
   const mensagem = `Olá, estou interessado no produto ${identicador} e gostaria de mais informações. Se possível, poderia me passar mais detalhes sobre ele?`;
 
@@ -48,8 +49,12 @@ export default function CardProduto({ nome, descricao, preco, url_foto, identica
           {nome}: {identicador}
         </h2>
 
-        <p className="mb-6 text-[15px] leading-7 text-zinc-600">
+        <p className="text-[15px] leading-7 text-zinc-600">
           {descricao}
+        </p>
+
+        <p className="mb-6 text-[15px] leading-7 text-zinc-600">
+          Quantidade: <span className="font-bold text-black text-[lg]"> {quantidade} </span>
         </p>
 
         <button className="flex w-full items-center justify-between text-left text-[16px] font-semibold text-red-500 transition-opacity hover:opacity-80">

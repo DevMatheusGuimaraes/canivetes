@@ -32,7 +32,7 @@ export default async function Produtos({
   let query = supabase
     .from("canivetes")
     .select(
-      "id, identificador, nome, descricao, preco, url_foto, categoria",
+      "id, identificador, nome, descricao, preco, url_foto, categoria, quantidade",
       { count: "exact" }
     )
     .order("id", { ascending: false });
@@ -139,6 +139,7 @@ export default async function Produtos({
                 key={item.id}
                 nome={item.nome}
                 descricao={item.descricao}
+                quantidade={item.quantidade}
                 preco={item.preco}
                 url_foto={item.url_foto}
                 identicador={item.identificador}
